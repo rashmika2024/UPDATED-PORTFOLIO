@@ -1,0 +1,187 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  background-color: #fefcfe; /* Soft background */
+}
+
+.body_section {
+  padding: 3% 5% 1%;
+  background-color: #ffffff; /* White background for body section */
+}
+
+p {
+  font-size: 18px;
+  color: #2c3e50; /* Dark slate gray for readability */
+}
+
+a {
+  text-decoration: none;
+  color: #3498db; /* Primary color for links */
+}
+
+a:hover {
+  color: #e74c3c; /* Change link color on hover */
+}
+
+@font-face {
+  font-family: "Elephant";
+  src: local("Elephant"), url("Image/LovelyHome-9aBZ.ttf") format("truetype");
+}
+
+.brand-name,
+.navbar-light .navbar-brand {
+  font-family: "Elephant";
+  font-size: 40px;
+  font-weight: bold;
+  color: #351458; /* Deep purple */
+}
+
+.headerachor {
+  color: #2c3e50; /* Match text color */
+  margin: 0 7px;
+  font-size: 25px;
+}
+
+.headerachor:hover {
+  background-color: #f1f1f1; /* Light hover background */
+}
+
+/* Section 1 */
+.column1 {
+  background-image: linear-gradient(#be95be, #ffffff);
+  padding: 8px 16px;
+}
+
+/* /* .section-1 {
+  margin-top: 6%;
+  text-align: left;
+  position: relative;
+  /* background-color: #e7e4e4; /* Light gray background for section */
+  /* padding: 20px; Padding for spacing
+} */ */
+.section-1 {
+  margin-top: 6%;
+  text-align: left;
+  position: relative;
+  background-color: #d1c7c7; /* Light gray background for section */
+  padding: 20px; /* Padding for spacing */
+  transition: transform 0.3s, box-shadow 0.3s; /* Transition for smooth effect */
+}
+
+.section-1:hover {
+  transform: translateY(-5px); /* Lift effect */
+  box-shadow: 0 8px 16px rgba(17, 17, 17, 0.2); /* Deeper shadow on hover */
+  background: #b8aead;
+}
+
+
+span.wave {
+  animation-name: wave-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+/* Animation keyframes... */
+
+.first-image {
+  position: absolute;
+  right: 0;
+}
+
+.boyimage {
+  height: 400px;
+}
+
+@media only screen and (max-width: 1183px) {
+  .first-image {
+    right: 160px;
+  }
+}
+
+.boy {
+  width: 100%;
+  height: 100%;
+  animation: bounce 1.2s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+/* Bounce keyframes... */
+
+.Image-boy {
+  text-align: center;
+  align-items: center;
+}
+
+@media only screen and (min-width: 951px) {
+  .Image-boy {
+    display: none;
+  }
+}
+
+.Hello {
+  margin-bottom: 20px;
+  color: #080b0c; /* Match primary color */
+}
+
+p {
+  line-height: 2;
+}
+
+.btn {
+  display: inline-block;
+  width: 4.37rem;
+  height: 4.37rem;
+  background: #e9e9e9; /* Light gray */
+  margin: 10px;
+  border-radius: 30%;
+  box-shadow: 0 5px 15px -5px #00000070;
+  color: #3498db; /* Primary color */
+  overflow: hidden;
+  position: relative;
+  transition: background 0.3s; /* Transition for background color */
+}
+
+.btn:hover {
+  background: #3498db; /* Change background on hover */
+}
+
+.btn i {
+  line-height: 70px;
+  font-size: 1.625rem;
+  transition: 0.2s linear;
+}
+
+.btn:hover i {
+  transform: scale(1.3);
+  color: #f1f1f1;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  background: #3498db; /* Primary color */
+  transform: rotate(45deg);
+  left: -110%;
+  top: 90%;
+}
+
+.btn:hover::before {
+  animation: aaa 0.7s 1;
+  top: -10%;
+  left: -10%;
+}
+
+/* Responsive adjustments... */
+
+footer {
+  padding-top: 2%;
+  color: #868e96; /* Muted gray for footer */
+  text-align: center;
+  background-color: #ffffff; /* White background for footer */
+  padding: 20px; /* Padding for spacing */
+}
