@@ -10,7 +10,6 @@ body {
 a {
   text-decoration: none;
 }
-
 @font-face {
   font-family: "ELEPHANT";
   src: local("ELEPHANT"), url("Image/LovelyHome-9aBZ.ttf") format("truetype");

@@ -1,0 +1,57 @@
+body {
+    background-color: #f8f9fa; /* Light background */
+}
+
+header {
+    text-align: center;
+}
+
+.project, .card {
+    background-color: #ffffff; /* White background for cards */
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding inside the card */
+    margin: 20px 0; /* Space between cards */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s; /* Animation for hover effect */
+}
+
+.project:hover, .card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 8px 16px rgba(15, 13, 3, 0.932); /* Enhanced shadow on hover */
+    background-color: hwb(29 74% 8% / 0.918); /* Light red background on hover */
+}
+
+h2 {
+    color: #333; /* Darker color for headings */
+}
+
+p {
+    color: #555; /* Gray color for paragraph text */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .project, .card {
+        margin: 10px; /* Reduce margin on smaller screens */
+    }
+}
+
+/* Navbar styles */
+.navbar {
+    margin-bottom: 20px; /* Space below navbar */
+}
+
+.brand-name {
+    font-family: 'Montserrat', sans-serif; /* Custom font for brand name */
+    font-weight: 800; /* Bold */
+}
+
+.headerachor {
+    color: #000; /* Default color for nav links */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.headerachor:hover {
+    color: #007bff; /* Change color on hover */
+}
